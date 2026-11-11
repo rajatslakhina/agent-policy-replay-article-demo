@@ -2,7 +2,7 @@
 
 Replay a coding-agent policy change against an iOS team's backlog. See which tickets flip, which monitor notices, and which agent-memory notes have turned a refusal into a project rule.
 
-**Article:** (added after publish)
+**Article:** [“Build It Like X” Was Always a Weak Ticket. Claude Code’s New Game Rule Just Made It Visible.](https://medium.com/@er.rajatlakhina/build-it-like-x-was-always-a-weak-ticket-claude-codes-new-game-rule-just-made-it-visible-f386a7833eb3) (Medium)
 
 ![Header card: In the replay, the rule changed twice. The version pin never moved. Installed client 2.1.307, version pin alerts 0 of 2, canary suite alerts 2 of 2.](docs/header.png)
 
