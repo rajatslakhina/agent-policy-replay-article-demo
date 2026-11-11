@@ -1,0 +1,31 @@
+<html><head><link rel="stylesheet" href="base.css"><style>
+body{width:1400px;height:560px;padding:46px 60px;background:#0d1117}
+h2{font-size:32px;font-weight:700}
+.sub{color:#8b949e;font-size:19px;margin-top:6px}
+.tl{display:flex;align-items:stretch;margin-top:40px;gap:0}
+.snap{width:300px;border:2px solid #30363d;border-radius:16px;padding:20px 22px;background:#161b22}
+.snap .d{font-size:26px;font-weight:800}
+.snap .r{font-size:17px;color:#c9d1d9;margin-top:10px;line-height:1.4}
+.snap .c{font-size:15px;color:#8b949e;margin-top:12px}
+.arrow{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 10px}
+.arrow .line{height:3px;width:100%;background:#30363d;position:relative}
+.arrow .line:after{content:"";position:absolute;right:-2px;top:-7px;border:8px solid transparent;border-left:12px solid #30363d}
+.flip{font-size:20px;font-weight:700;margin-bottom:12px;color:#ffa657}
+.mon{margin-top:14px;font-size:17px;line-height:1.7;text-align:center}
+.ok{color:#7ee2b8;font-weight:700}.no{color:#ff7b72;font-weight:700}
+.foot{margin-top:40px;display:flex;gap:24px}
+.f{flex:1;border-left:4px solid #58a6ff;padding:6px 18px;font-size:18px;color:#c9d1d9;line-height:1.45}
+</style></head><body>
+<h2>Same pinned client, three behaviours</h2>
+<div class="sub">12 constructed iOS tickets, replayed against three snapshots modelled on the reported Claude Code game rule</div>
+<div class="tl">
+ <div class="snap"><div class="d">20 Oct</div><div class="r">No rule</div><div class="c mono">client 2.1.307 · 0 refused</div></div>
+ <div class="arrow"><div class="flip">4 tickets flip to refused</div><div class="line"></div><div class="mon">Canary suite: <span class="ok">alerted</span><br>Version pin: <span class="no">silent</span></div></div>
+ <div class="snap"><div class="d">27 Oct</div><div class="r">Refuse recreating a named existing game</div><div class="c mono">client 2.1.307 · 4 refused</div></div>
+ <div class="arrow"><div class="flip">1 ticket flips back</div><div class="line"></div><div class="mon">Canary suite: <span class="ok">alerted</span><br>Version pin: <span class="no">silent</span></div></div>
+ <div class="snap"><div class="d">2 Nov</div><div class="r">Allow mechanics only; still no name, characters, art, music, levels or look</div><div class="c mono">client 2.1.307 · 3 refused</div></div>
+</div>
+<div class="foot">
+ <div class="f">A version pin compares what you <b>installed</b>. In the replay, both rules arrived from a server, so it had nothing to compare.</div>
+ <div class="f">A canary suite compares what the agent <b>did</b> with the same tickets. That is the only monitor that saw either change.</div>
+</div></body></html>
